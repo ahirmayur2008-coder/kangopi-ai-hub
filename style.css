@@ -428,3 +428,14 @@ button:hover{
     background:#22c55e;
     color:white;
 }
+
+
+.trending-tools{
+    padding:50px 20px;
+    text-align:center;
+}
+
+.paid{
+    background:#f59e0b;
+    color:white;
+}
