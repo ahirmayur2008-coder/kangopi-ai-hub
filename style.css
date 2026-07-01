@@ -334,3 +334,30 @@ button:hover{
 .btn:hover{
     background:#0ea5e9;
 }
+
+
+
+
+
+.tool-card{
+    background:#1e293b;
+    color:white;
+    padding:20px;
+    margin:20px;
+    border-radius:12px;
+    text-align:center;
+}
+
+.tool-card h3{
+    color:#38bdf8;
+}
+
+.tool-card a{
+    display:inline-block;
+    margin-top:10px;
+    padding:10px 20px;
+    background:#38bdf8;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+}
