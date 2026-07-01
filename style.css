@@ -374,3 +374,28 @@ button:hover{
     border-radius:8px;
     border:2px solid #38bdf8;
 }
+
+
+
+
+.categories{
+    text-align:center;
+    padding:40px 20px;
+}
+
+.category-card{
+    display:inline-block;
+    background:#1e293b;
+    color:white;
+    padding:15px 25px;
+    margin:10px;
+    border-radius:10px;
+    border:2px solid #38bdf8;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.category-card:hover{
+    background:#38bdf8;
+    cursor:pointer;
+}
