@@ -384,3 +384,16 @@ body{
 .category-item:hover {
     background: #334155;
 }
+.search-section{
+    text-align:center;
+    margin:30px 0;
+}
+
+.search-section input{
+    width:80%;
+    max-width:500px;
+    padding:12px;
+    font-size:16px;
+    border-radius:10px;
+    border:1px solid #ccc;
+}
