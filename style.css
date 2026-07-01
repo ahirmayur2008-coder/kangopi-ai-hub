@@ -285,3 +285,29 @@ footer{
     color:#888;
     border-top:1px solid #222;
 }
+
+
+
+
+
+input, textarea{
+    width:300px;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    margin-bottom:10px;
+}
+
+button{
+    padding:12px 24px;
+    background:#38bdf8;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#0ea5e9;
+}
