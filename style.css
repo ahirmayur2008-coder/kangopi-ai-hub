@@ -193,3 +193,23 @@ nav{
 }
 
 }
+
+.light-mode{
+    background:#f8fafc;
+    color:#111827;
+}
+
+.light-mode .header,
+.light-mode footer{
+    background:#e2e8f0;
+}
+
+.light-mode .tool-card,
+.light-mode .category-card{
+    background:#ffffff;
+    color:#111827;
+}
+
+.light-mode nav a{
+    color:#111827;
+}
