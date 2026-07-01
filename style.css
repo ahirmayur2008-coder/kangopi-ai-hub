@@ -64,3 +64,140 @@ nav a:hover{
     border-radius:8px;
     font-weight:bold;
 }
+
+
+
+
+.search-section{
+    text-align:center;
+    padding:50px 20px;
+}
+
+.search-section input{
+    width:60%;
+    max-width:500px;
+    padding:14px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.search-section button{
+    padding:14px 24px;
+    margin-left:10px;
+    border:none;
+    background:#2563eb;
+    color:#fff;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.categories,
+.featured-tools{
+    padding:70px 8%;
+}
+
+.categories h2,
+.featured-tools h2,
+.newsletter h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:34px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#fff;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    margin:15px 0;
+}
+
+.card a{
+    display:inline-block;
+    margin-top:15px;
+    text-decoration:none;
+    color:#2563eb;
+    font-weight:bold;
+}
+
+.newsletter{
+    background:#111827;
+    color:#fff;
+    text-align:center;
+    padding:70px 20px;
+}
+
+.newsletter p{
+    margin:20px 0;
+}
+
+.newsletter input{
+    width:300px;
+    max-width:80%;
+    padding:14px;
+    border:none;
+    border-radius:8px;
+}
+
+.newsletter button{
+    padding:14px 22px;
+    margin-left:10px;
+    border:none;
+    border-radius:8px;
+    background:#38bdf8;
+    color:#fff;
+    cursor:pointer;
+}
+
+footer{
+    background:#000;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+    header{
+        flex-direction:column;
+    }
+
+    nav{
+        margin-top:15px;
+    }
+
+    nav a{
+        display:block;
+        margin:10px 0;
+    }
+
+    .hero h1{
+        font-size:34px;
+    }
+
+    .search-section input{
+        width:100%;
+        margin-bottom:10px;
+    }
+
+    .search-section button,
+    .newsletter button{
+        margin-left:0;
+        margin-top:10px;
+    }
+}
