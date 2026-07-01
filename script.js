@@ -1,43 +1,96 @@
-const searchInput = document.querySelector("input");
+// ==========================
+// Dark / Light Mode
+// ==========================
 
-searchInput.addEventListener("keyup", function () {
-  const value = searchInput.value.toLowerCase();
-  const cards = document.querySelectorAll(".card");
+const themeToggle = document.getElementById("themeToggle");
 
-  cards.forEach(card => {
-    const text = card.innerText.toLowerCase();
+if (themeToggle) {
 
-    if (text.includes(value)) {
-      card.style.display = "block";
-    } else {
-      card.style.display = "none";
+    if (localStorage.getItem("theme") === "light") {
+        document.body.classList.add("light-mode");
+        themeToggle.innerHTML = "☀️";
     }
-  });
-});
 
+    themeToggle.addEventListener("click", () => {
 
+        document.body.classList.toggle("light-mode");
 
+        if (document.body.classList.contains("light-mode")) {
 
+            localStorage.setItem("theme","light");
+            themeToggle.innerHTML = "☀️";
 
+        } else {
+
+            localStorage.setItem("theme","dark");
+            themeToggle.innerHTML = "🌙";
+
+        }
+
+    });
+
+}
+
+// ==========================
+// Search AI Tools
+// ==========================
 
 const searchInput = document.getElementById("searchInput");
 
-searchInput.addEventListener("keyup", function () {
+if (searchInput) {
 
-const value = this.value.toLowerCase();
+    searchInput.addEventListener("keyup", function(){
 
-const cards = document.querySelectorAll(".tool-card");
+        let value = this.value.toLowerCase();
 
-cards.forEach(card => {
+        let cards = document.querySelectorAll(".tool-card");
 
-const text = card.innerText.toLowerCase();
+        cards.forEach(card=>{
 
-if(text.includes(value)){
-card.style.display="block";
-}else{
-card.style.display="none";
+            if(card.innerText.toLowerCase().includes(value)){
+
+                card.style.display="block";
+
+            }else{
+
+                card.style.display="none";
+
+            }
+
+        });
+
+    });
+
 }
 
+// ==========================
+// Back To Top Button
+// ==========================
+
+const topBtn = document.getElementById("topBtn");
+
+window.addEventListener("scroll",()=>{
+
+    if(window.scrollY>300){
+
+        topBtn.style.display="block";
+
+    }else{
+
+        topBtn.style.display="none";
+
+    }
+
 });
+
+topBtn.addEventListener("click",()=>{
+
+    window.scrollTo({
+
+        top:0,
+
+        behavior:"smooth"
+
+    });
 
 });
