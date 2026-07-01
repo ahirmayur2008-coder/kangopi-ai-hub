@@ -399,3 +399,32 @@ button:hover{
     background:#38bdf8;
     cursor:pointer;
 }
+
+
+
+
+.featured-tools{
+    padding:50px 20px;
+    text-align:center;
+}
+
+.tool-grid{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.badge{
+    display:inline-block;
+    padding:5px 10px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+.free{
+    background:#22c55e;
+    color:white;
+}
