@@ -528,3 +528,59 @@ html{
 #topBtn:hover{
     background:#0ea5e9;
 }
+
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+
+    background:
+    linear-gradient(rgba(15,23,42,.85),rgba(15,23,42,.85)),
+    url("https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1600");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    max-width:800px;
+}
+
+.hero h1{
+    font-size:56px;
+    color:#38bdf8;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    color:#e2e8f0;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.btn{
+    background:#38bdf8;
+    color:white;
+    text-decoration:none;
+    padding:14px 28px;
+    border-radius:10px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#0ea5e9;
+    transform:translateY(-3px);
+}
