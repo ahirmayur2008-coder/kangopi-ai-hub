@@ -86,3 +86,16 @@ if (searchInput) {
 }
 
 console.log("✅ Kangopi AI Hub Loaded Successfully");
+
+function searchTools() {
+    let input = document.getElementById('searchInput').value.toLowerCase();
+    let cards = document.getElementsByClassName('tool-card');
+    for (let card of cards) {
+        let title = card.getElementsByTagName('h3')[0].innerText.toLowerCase();
+        if (title.includes(input)) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    }
+}
