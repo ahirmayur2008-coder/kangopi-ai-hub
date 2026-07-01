@@ -14,7 +14,19 @@
 
 <body>
 
+<script>
+const toggle = document.getElementById("themeToggle");
 
+toggle.addEventListener("click", function () {
+    document.body.classList.toggle("light-mode");
+
+    if (document.body.classList.contains("light-mode")) {
+        toggle.innerHTML = "☀️ Light Mode";
+    } else {
+        toggle.innerHTML = "🌙 Dark Mode";
+    }
+});
+</script>
 
   <footer class="footer">
     <h3>Kangopi AI Hub</h3>
