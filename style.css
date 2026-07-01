@@ -439,3 +439,37 @@ button:hover{
     background:#f59e0b;
     color:white;
 }
+
+
+
+
+.footer{
+    background:#020617;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+    margin-top:50px;
+}
+
+.footer h3{
+    color:#38bdf8;
+}
+
+.footer-links{
+    margin:20px 0;
+}
+
+.footer-links a{
+    color:white;
+    text-decoration:none;
+    margin:0 12px;
+}
+
+.footer-links a:hover{
+    color:#38bdf8;
+}
+
+.copyright{
+    color:#94a3b8;
+    font-size:14px;
+}
